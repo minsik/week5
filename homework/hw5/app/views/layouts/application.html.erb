@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Event Scheduler</title>
+  <%= stylesheet_link_tag    "application", :media => "all" %>
+  <%= javascript_include_tag "application" %>
+  <%= csrf_meta_tags %>
+</head>
+<body>
+  Navigation:
+  <%= link_to "Events", events_url %>
+  <%= link_to "Venues", venues_url %>
+
+<%= yield %>
+
+</body>
+</html>
